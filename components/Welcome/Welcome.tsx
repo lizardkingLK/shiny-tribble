@@ -1,4 +1,5 @@
 import { Title, Text, Anchor } from '@mantine/core';
+import Navbar from '../Navbar/Navbar';
 import useStyles from './Welcome.styles';
 
 export function Welcome() {
@@ -6,19 +7,18 @@ export function Welcome() {
 
   return (
     <>
+      <Navbar />
       <Title className={classes.title} align="center" mt={100}>
         Welcome to{' '}
         <Text inherit variant="gradient" component="span">
-          Mantine
+          AC420
         </Text>
       </Title>
       <Text color="dimmed" align="center" size="lg" sx={{ maxWidth: 580 }} mx="auto" mt="xl">
-        This starter Next.js project includes a minimal setup for server side rendering, if you want
-        to learn more on Mantine + Next.js integration follow{' '}
-        <Anchor href="https://mantine.dev/guides/next/" size="lg">
-          this guide
-        </Anchor>
-        . To get started edit index.tsx file.
+        This is the preview of the site.{' '}
+        <Anchor href="/signup" size="lg">
+          Sign Up
+        </Anchor>{' '}here to start the awesomeness
       </Text>
     </>
   );
