@@ -1,9 +1,9 @@
 import { createStyles } from '@mantine/core';
 
 export default createStyles((theme) => ({
-  title: {
+  input: {
     color: theme.colorScheme === 'dark' ? theme.white : theme.black,
-    fontSize: 24,
-    fontWeight: 900,
+    marginRight: 10,
+    minWidth: '100%'
   },
 }));
