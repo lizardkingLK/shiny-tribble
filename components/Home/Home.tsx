@@ -1,5 +1,6 @@
-import { Container, Grid, Text, Title, } from '@mantine/core';
+import { Container, Grid, Title, } from '@mantine/core';
 import NewsItem from '../NewsItem/NewsItem';
+import TopicItem from '../TopicItem/TopicItem';
 import useStyles from './Home.styles';
 
 export default function Navbar() {
@@ -13,7 +14,13 @@ export default function Navbar() {
                         Topics
                     </Title>
                     <hr />
-                    <Text>News</Text>
+                    <TopicItem topicTitle={'Countries'} />
+                    <TopicItem topicTitle={'Cultures'} />
+                    <TopicItem topicTitle={'Environments'} />
+                    <TopicItem topicTitle={'Survival'} />
+                    <TopicItem topicTitle={'Rainings'} />
+                    <TopicItem topicTitle={'Days'} />
+                    <TopicItem topicTitle={'Fastings'} />
                 </Grid.Col>
                 <Grid.Col span={9}>
                     <Title className={classes.title}>
