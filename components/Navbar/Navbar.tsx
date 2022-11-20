@@ -1,6 +1,7 @@
 import { Anchor, Container, Grid, Text, Title } from '@mantine/core';
 import useStyles from './Navbar.styles';
-import { ColorSchemeToggle } from '../../components/ColorSchemeToggle/ColorSchemeToggle';
+import { ColorSchemeToggle } from '../ThemeToggle/ThemeToggle';
+import Search from '../Search/Search';
 
 export default function Navbar() {
     const { classes } = useStyles();
@@ -8,7 +9,7 @@ export default function Navbar() {
     return (
         <Container size={'xl'} my={20}>
             <Grid justify={'space-between'} align={'center'}>
-                <Grid.Col span={4}>
+                <Grid.Col span={3}>
                     <Title className={classes.title}>
                         <Anchor href="/">
                             <Text inherit>
@@ -17,8 +18,13 @@ export default function Navbar() {
                         </Anchor>
                     </Title>
                 </Grid.Col>
-                <Grid.Col span={4}>
-                    <Grid justify={'flex-end'}>
+
+                <Grid.Col span={8}>
+                    <Search />
+                </Grid.Col>
+
+                <Grid.Col span={1}>
+                    <Grid justify={'flex-end'} align={'center'}>
                         <ColorSchemeToggle />
                     </Grid>
                 </Grid.Col>

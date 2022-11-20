@@ -16,7 +16,7 @@ export function Welcome() {
       </Title>
       <Text color="dimmed" align="center" size="lg" sx={{ maxWidth: 580 }} mx="auto" mt="xl">
         This is the preview of the site.{' '}
-        <Anchor href="/signup" size="lg">
+        <Anchor href="/home" size="lg">
           Sign Up
         </Anchor>{' '}here to start the awesomeness
       </Text>
