@@ -1,9 +1,10 @@
 import { createStyles } from '@mantine/core';
 
 export default createStyles((theme) => ({
-  title: {
-    color: theme.colorScheme === 'dark' ? theme.white : theme.black,
+  anchor: {
+    color: theme.colorScheme === 'dark' ? theme.colors.yellow[4]  : theme.colors.blue[4] ,
     fontSize: 24,
     fontWeight: 900,
+    fontFamily: 'Roboto Mono',    
   },
 }));

@@ -10,13 +10,11 @@ export default function Navbar() {
         <Container size={'xl'} my={20}>
             <Grid justify={'space-between'} align={'center'}>
                 <Grid.Col span={3}>
-                    <Title className={classes.title}>
-                        <Anchor href="/">
-                            <Text inherit>
-                                AC420
-                            </Text>
-                        </Anchor>
-                    </Title>
+                    <Anchor href="/" underline={false}>
+                        <Text className={classes.anchor}>
+                            AC420
+                        </Text>
+                    </Anchor>
                 </Grid.Col>
 
                 <Grid.Col span={8}>
